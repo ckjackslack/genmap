@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_33ebee16c4654aff83e11326bf3c882a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_33ebee16c4654aff83e11326bf3c882a" ></div>
+        
+</body>
+<script>    
+    
+            var map_33ebee16c4654aff83e11326bf3c882a = L.map(
+                "map_33ebee16c4654aff83e11326bf3c882a",
+                {
+                    center: [50.8719903, 20.6310488],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb3784e8dbe645a28ea964708dca9a1b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33ebee16c4654aff83e11326bf3c882a);
+        
+    
+            var feature_group_2ffd4c9d1f114710b49cd6766b7bbf88 = L.featureGroup(
+                {}
+            ).addTo(map_33ebee16c4654aff83e11326bf3c882a);
+        
+    
+            var circle_marker_7f30149c19f041f08f93d972a729041e = L.circleMarker(
+                [51.8755105, 20.5308254],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_e60f1defb1a54e50a891e86ff02b46c9 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_a87999513313414c8c1832c20f1c5da3 = $(`<div id="html_a87999513313414c8c1832c20f1c5da3" style="width: 100.0%; height: 100.0%;"><h5><b>Biała Wieś</b></h5><h6><b>111.80</b></h6></div>`)[0];
+            popup_e60f1defb1a54e50a891e86ff02b46c9.setContent(html_a87999513313414c8c1832c20f1c5da3);
+        
+
+        circle_marker_7f30149c19f041f08f93d972a729041e.bindPopup(popup_e60f1defb1a54e50a891e86ff02b46c9)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_7f30149c19f041f08f93d972a729041e.bindTooltip(
+                `<div>
+                     <h5><b>Biała Wieś</b></h5><h6><b>111.80</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a02e91afc5ed4176b5fc5983096836bf = L.circleMarker(
+                [51.1758135, 17.0503262],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_503d6d71eea243feb9a70285e4ebb594 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_0898a4f5aa0d404281c95d2b96a55743 = $(`<div id="html_0898a4f5aa0d404281c95d2b96a55743" style="width: 100.0%; height: 100.0%;"><h5><b>Krzyżanowice</b></h5><h6><b>252.68</b></h6></div>`)[0];
+            popup_503d6d71eea243feb9a70285e4ebb594.setContent(html_0898a4f5aa0d404281c95d2b96a55743);
+        
+
+        circle_marker_a02e91afc5ed4176b5fc5983096836bf.bindPopup(popup_503d6d71eea243feb9a70285e4ebb594)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_a02e91afc5ed4176b5fc5983096836bf.bindTooltip(
+                `<div>
+                     <h5><b>Krzyżanowice</b></h5><h6><b>252.68</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cab0e2577075431f82854978c95b7e96 = L.circleMarker(
+                [51.41716055, 21.160944780832743],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_e92453be7217416ab7b63d573f61b753 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_8757d9534c22477e967295c402c12f40 = $(`<div id="html_8757d9534c22477e967295c402c12f40" style="width: 100.0%; height: 100.0%;"><h5><b>Radom</b></h5><h6><b>71.00</b></h6></div>`)[0];
+            popup_e92453be7217416ab7b63d573f61b753.setContent(html_8757d9534c22477e967295c402c12f40);
+        
+
+        circle_marker_cab0e2577075431f82854978c95b7e96.bindPopup(popup_e92453be7217416ab7b63d573f61b753)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_cab0e2577075431f82854978c95b7e96.bindTooltip(
+                `<div>
+                     <h5><b>Radom</b></h5><h6><b>71.00</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_70bec5eda220442fb0bb760c84d714ef = L.circleMarker(
+                [52.41925, 18.76435],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "gray", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_39d07f8d0b384c3187b4307a847b0a20 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_7adb49b223bd487aabea174948ef6bd3 = $(`<div id="html_7adb49b223bd487aabea174948ef6bd3" style="width: 100.0%; height: 100.0%;"><h5><b>Izbica Kujawska</b></h5><h6><b>214.90</b></h6></div>`)[0];
+            popup_39d07f8d0b384c3187b4307a847b0a20.setContent(html_7adb49b223bd487aabea174948ef6bd3);
+        
+
+        circle_marker_70bec5eda220442fb0bb760c84d714ef.bindPopup(popup_39d07f8d0b384c3187b4307a847b0a20)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_70bec5eda220442fb0bb760c84d714ef.bindTooltip(
+                `<div>
+                     <h5><b>Izbica Kujawska</b></h5><h6><b>214.90</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39bb9bda70874bdb95c07c4a8d0a1ab1 = L.circleMarker(
+                [51.6418528, 17.8906224],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_262a1713c00242c8b34a20cafa9847ea = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_40f8cb4be5914b12afbadf36fd75ad99 = $(`<div id="html_40f8cb4be5914b12afbadf36fd75ad99" style="width: 100.0%; height: 100.0%;"><h5><b>Wtórek</b></h5><h6><b>209.02</b></h6></div>`)[0];
+            popup_262a1713c00242c8b34a20cafa9847ea.setContent(html_40f8cb4be5914b12afbadf36fd75ad99);
+        
+
+        circle_marker_39bb9bda70874bdb95c07c4a8d0a1ab1.bindPopup(popup_262a1713c00242c8b34a20cafa9847ea)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_39bb9bda70874bdb95c07c4a8d0a1ab1.bindTooltip(
+                `<div>
+                     <h5><b>Wtórek</b></h5><h6><b>209.02</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d73b271be6c8415cbfacda1d9cf83f0d = L.circleMarker(
+                [49.822118, 19.0448936],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "beige", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_c5662a5fd7414c1d8333b2b91fd8f94d = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_84f8d236ad4748dc90cac1811093ae07 = $(`<div id="html_84f8d236ad4748dc90cac1811093ae07" style="width: 100.0%; height: 100.0%;"><h5><b>Bielsko-Biała</b></h5><h6><b>162.15</b></h6></div>`)[0];
+            popup_c5662a5fd7414c1d8333b2b91fd8f94d.setContent(html_84f8d236ad4748dc90cac1811093ae07);
+        
+
+        circle_marker_d73b271be6c8415cbfacda1d9cf83f0d.bindPopup(popup_c5662a5fd7414c1d8333b2b91fd8f94d)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_d73b271be6c8415cbfacda1d9cf83f0d.bindTooltip(
+                `<div>
+                     <h5><b>Bielsko-Biała</b></h5><h6><b>162.15</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a0b38211c424a1c85f750268b23f9bc = L.circleMarker(
+                [50.013064, 22.016143457294312],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "pink", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_3136e3c9e07d420cafb4b8405951e2b2 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_3a94cdf265024089975e9283f2acbab7 = $(`<div id="html_3a94cdf265024089975e9283f2acbab7" style="width: 100.0%; height: 100.0%;"><h5><b>Rzeszów</b></h5><h6><b>136.90</b></h6></div>`)[0];
+            popup_3136e3c9e07d420cafb4b8405951e2b2.setContent(html_3a94cdf265024089975e9283f2acbab7);
+        
+
+        circle_marker_0a0b38211c424a1c85f750268b23f9bc.bindPopup(popup_3136e3c9e07d420cafb4b8405951e2b2)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_0a0b38211c424a1c85f750268b23f9bc.bindTooltip(
+                `<div>
+                     <h5><b>Rzeszów</b></h5><h6><b>136.90</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_060daaf07d734127a29a736d14e4486c = L.circleMarker(
+                [50.678792900000005, 17.929884436033525],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "violet", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_cfd5aa4ad33f4e0f8918558c8ff349ef = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_f8dd1446bc0f4e86bc5a95d3053e1247 = $(`<div id="html_f8dd1446bc0f4e86bc5a95d3053e1247" style="width: 100.0%; height: 100.0%;"><h5><b>Opole</b></h5><h6><b>191.13</b></h6></div>`)[0];
+            popup_cfd5aa4ad33f4e0f8918558c8ff349ef.setContent(html_f8dd1446bc0f4e86bc5a95d3053e1247);
+        
+
+        circle_marker_060daaf07d734127a29a736d14e4486c.bindPopup(popup_cfd5aa4ad33f4e0f8918558c8ff349ef)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_060daaf07d734127a29a736d14e4486c.bindTooltip(
+                `<div>
+                     <h5><b>Opole</b></h5><h6><b>191.13</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a1a5d87560c4a10a928e38b9bcdcc44 = L.circleMarker(
+                [54.06471, 19.99426],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_b902ec9cc6eb4b9c8990da2b044d538d = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_eaafa3079eeb47d9a78a61ca2eb5270d = $(`<div id="html_eaafa3079eeb47d9a78a61ca2eb5270d" style="width: 100.0%; height: 100.0%;"><h5><b>Gwiździny</b></h5><h6><b>357.62</b></h6></div>`)[0];
+            popup_b902ec9cc6eb4b9c8990da2b044d538d.setContent(html_eaafa3079eeb47d9a78a61ca2eb5270d);
+        
+
+        circle_marker_7a1a5d87560c4a10a928e38b9bcdcc44.bindPopup(popup_b902ec9cc6eb4b9c8990da2b044d538d)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_7a1a5d87560c4a10a928e38b9bcdcc44.bindTooltip(
+                `<div>
+                     <h5><b>Gwiździny</b></h5><h6><b>357.62</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ba5cf31533d4459683eb19335ea3841f = L.circleMarker(
+                [49.9677323, 19.9728341],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_bca2a1212291437b8ccab9d320bb7cdd = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_9ce01f182c53452082915b078b631f86 = $(`<div id="html_9ce01f182c53452082915b078b631f86" style="width: 100.0%; height: 100.0%;"><h5><b>Wilga</b></h5><h6><b>110.84</b></h6></div>`)[0];
+            popup_bca2a1212291437b8ccab9d320bb7cdd.setContent(html_9ce01f182c53452082915b078b631f86);
+        
+
+        circle_marker_ba5cf31533d4459683eb19335ea3841f.bindPopup(popup_bca2a1212291437b8ccab9d320bb7cdd)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_ba5cf31533d4459683eb19335ea3841f.bindTooltip(
+                `<div>
+                     <h5><b>Wilga</b></h5><h6><b>110.84</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bc5b7f70dbf3459eb216c042597fcc66 = L.circleMarker(
+                [52.6313882, 14.9336037],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "brown", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_fba5577529274dc7bedae282c8d01381 = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_904230fd0dae487cb8f6f415f8f02bc5 = $(`<div id="html_904230fd0dae487cb8f6f415f8f02bc5" style="width: 100.0%; height: 100.0%;"><h5><b>Oksza</b></h5><h6><b>438.11</b></h6></div>`)[0];
+            popup_fba5577529274dc7bedae282c8d01381.setContent(html_904230fd0dae487cb8f6f415f8f02bc5);
+        
+
+        circle_marker_bc5b7f70dbf3459eb216c042597fcc66.bindPopup(popup_fba5577529274dc7bedae282c8d01381)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_bc5b7f70dbf3459eb216c042597fcc66.bindTooltip(
+                `<div>
+                     <h5><b>Oksza</b></h5><h6><b>438.11</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4b830b3e02049e2a5bd2c691cb1ce52 = L.circleMarker(
+                [52.1663751, 22.2765138],
+                {"bubblingMouseEvents": true, "color": false, "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(feature_group_2ffd4c9d1f114710b49cd6766b7bbf88);
+        
+    
+        var popup_64b105790a6a4be4994e4a6b552792cb = L.popup({"autoClose": false, "maxWidth": "100%"});
+
+        
+            var html_a8023283589f40f39a005b2186bfe596 = $(`<div id="html_a8023283589f40f39a005b2186bfe596" style="width: 100.0%; height: 100.0%;"><h5><b>Siedlce</b></h5><h6><b>183.51</b></h6></div>`)[0];
+            popup_64b105790a6a4be4994e4a6b552792cb.setContent(html_a8023283589f40f39a005b2186bfe596);
+        
+
+        circle_marker_a4b830b3e02049e2a5bd2c691cb1ce52.bindPopup(popup_64b105790a6a4be4994e4a6b552792cb)
+        .openPopup();
+
+        
+    
+    
+            circle_marker_a4b830b3e02049e2a5bd2c691cb1ce52.bindTooltip(
+                `<div>
+                     <h5><b>Siedlce</b></h5><h6><b>183.51</b></h6>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
